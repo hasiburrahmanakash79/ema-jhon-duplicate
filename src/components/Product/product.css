@@ -3,15 +3,38 @@
     height: 570px;
     color: black;
     background-color: white;
-    border-radius: 7px;
-    border: 2px solid lightgrey;
+    border-radius: 8px;
+    border: 1px solid #95A0A7;
+    position: relative;
+}
+.product-name{
+    margin: 0;
 }
 .product img{
     width: 310px;
     height: 300px;
     margin: 10px;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 .product-info{
     padding-left: 14px;
+}
+.product-info p{
+    margin: 0;
+}
+.product-info h4{
+    margin-bottom: 10px;
+}
+.BTN-cart{
+    width: 100%;
+    color: black;
+    background: #FFE0B3;
+    border: 1px solid #95A0A7;
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
+
+}
+.BTN-cart:hover{
+    background-color: #f8c88c;
 }
