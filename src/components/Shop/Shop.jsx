@@ -22,7 +22,7 @@ const Shop = () => {
                 }
             </div>
             <div className="product-summary">
-                <h2>summary</h2>
+                <h2>Order summary</h2>
             </div>
         </div>
     );
