@@ -1,0 +1,17 @@
+.product{
+    width: 330px;
+    height: 570px;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid lightgrey;
+}
+.product img{
+    width: 310px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 7px;
+}
+.product-info{
+    padding-left: 14px;
+}
