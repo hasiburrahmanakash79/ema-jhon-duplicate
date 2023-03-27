@@ -1,0 +1,16 @@
+.product-summary{
+    height: 780px;
+    background-color: #FFE0B3;
+    color: black;
+    position: sticky;
+    top: 0;
+}
+.product-summary h2{
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+.product-summary div{
+    margin-left: 30px;
+}

@@ -10,15 +10,3 @@
     padding-right: 90px;
     margin-top: 70px;
 }
-.product-summary{
-    height: 780px;
-    background-color: #FFE0B3;
-    color: black;
-}
-.product-summary h2{
-    text-align: center;
-    text-decoration: underline;
-}
-.product-summary div{
-    margin-left: 30px;
-}
