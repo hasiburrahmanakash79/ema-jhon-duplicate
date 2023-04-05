@@ -6,9 +6,15 @@ const Summary = (props) => {
 
     let totalPrice = 0;
     let totalShipping = 0;
+    let quantity = 0
     for(const product of cart){
-        totalPrice = totalPrice + product.price;
+        if(product.quantity === 0){
+            product.quantity = 1
+        }
+        totalPrice = totalPrice + product.price * product.quantity;
         totalShipping = totalShipping + product.shipping;
+
+        quantity = quantity + product.quantity;
     }
     const tex = totalPrice*5/100;
     const grandTotal = totalPrice + totalShipping + tex;
@@ -16,7 +22,7 @@ const Summary = (props) => {
         <div className="product-summary">
             <h2>Order summary</h2>
             <div>
-                <p>Selected Items: {cart.length}</p>
+                <p>Selected Items: {quantity}</p>
                 <p>Total Price: ${totalPrice}</p>
                 <p>Shipping Charge: ${totalShipping}</p>
                 <p>Tax: ${tex.toFixed(2)}</p>
