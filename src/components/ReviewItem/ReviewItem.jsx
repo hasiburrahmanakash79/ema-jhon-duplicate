@@ -1,11 +1,23 @@
-import React from 'react';
+import React from "react";
+import "./ReviewItem.css";
 
-const ReviewItem = ({product}) => {
-    return (
+const ReviewItem = ({ product }) => {
+  const { img, name, id, price, quantity } = product;
+  return (
+    <div className="review-item">
+      <div className="review-product-details">
+        <img className="img-review" src={img} alt="" />
         <div>
-            <h1>item is here</h1>
+          <p className="product-name">{name}</p>
+          <p>Price: {price}</p>
+          <p>Quantity: {quantity}</p>
         </div>
-    );
+      </div>
+      <div>
+        <button>d</button>
+      </div>
+    </div>
+  );
 };
 
 export default ReviewItem;

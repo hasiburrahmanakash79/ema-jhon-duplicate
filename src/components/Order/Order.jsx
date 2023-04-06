@@ -1,4 +1,5 @@
 import React from "react";
+import './Order.css'
 import Summary from "../Summary/Summary";
 import { useLoaderData } from "react-router-dom";
 import ReviewItem from "../ReviewItem/ReviewItem";
@@ -8,7 +9,7 @@ const Order = () => {
     console.log(products);
   return (
     <div className='shop-container'>
-      <div className="">
+      <div className="review-container">
         {
             products.map(product => <ReviewItem
                 key={product.id}

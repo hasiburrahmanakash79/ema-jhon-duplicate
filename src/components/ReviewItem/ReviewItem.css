@@ -1,0 +1,28 @@
+.img-review{
+    height: 90px;
+    width: 90px;
+    border-radius: 5px;
+}
+.product-name{
+    font-weight: bold;
+}
+.review-product-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.review-product-details p{
+    margin: 0;
+    color: black;
+}
+.review-item{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 25px 7px 7px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
