@@ -12,12 +12,31 @@
     align-items: center;
     gap: 20px;
 }
+.amount{
+    color: #FF9900;
+}
+.btn-dlt-item{
+    background-color: rgba(235, 87, 87, 0.3);
+    height: 55px;
+    width: 55px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.delete-icon{
+    color:#EB5757;
+    font-size: 25px;
+}
 .review-product-details p{
     margin: 0;
     color: black;
 }
 .review-item{
     background-color: rgb(255, 255, 255);
+    width: 570px;
     display: flex;
     justify-content: space-between;
     align-items: center;
