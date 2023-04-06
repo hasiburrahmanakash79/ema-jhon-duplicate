@@ -8,6 +8,9 @@ import {
 import './index.css'
 import Shop from './components/Shop/Shop';
 import Home from './components/Home/Home';
+import Order from './components/Order/Order';
+import Inventory from './components/Header/Inventory/Inventory';
+import Login from './components/Login/Login';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,18 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Shop></Shop>
+      },
+      {
+        path: '/order',
+        element: <Order></Order>
+      },
+      {
+        path: 'inventory',
+        element: <Inventory></Inventory>
+      },
+      {
+        path: 'login',
+        element: <Login></Login>
       }
     ]
   }
