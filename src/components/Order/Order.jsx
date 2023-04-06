@@ -1,11 +1,26 @@
-import React from 'react';
+import React from "react";
+import Summary from "../Summary/Summary";
+import { useLoaderData } from "react-router-dom";
+import ReviewItem from "../ReviewItem/ReviewItem";
 
 const Order = () => {
-    return (
-        <div>
-            <h1>This is order page.</h1>
-        </div>
-    );
+    const products = useLoaderData()
+    console.log(products);
+  return (
+    <div className='shop-container'>
+      <div className="">
+        {
+            products.map(product => <ReviewItem
+                key={product.id}
+                product={product}
+            ></ReviewItem>)
+        }
+      </div>
+      <div>
+        <Summary cart={products}></Summary>
+      </div>
+    </div>
+  );
 };
 
 export default Order;
